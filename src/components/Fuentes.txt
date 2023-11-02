@@ -1,0 +1,79 @@
+{
+  "Fuentes": [
+    {
+      "Nombre": "Fuente Be Quiet 1000W 80 Plus Gold PURE POWER 11 Full Modular",
+      "Precio": 113000,
+      "Watts Nominal": "1000 w",
+      "Watts Reales": "1000 w",
+      "Formato": "ATX",
+      "Compatible Con Posición Inferior": "Si",
+      "Certificacion 80 Plus": "80 PLUS Gold",
+      "Modo Híbrido": "No",
+      "Tipo De Cableado": "Full Modular",
+      "Ampers En Línea +12V": "84 a",
+      "Fuente Digital": "No",
+      "Color": "Negro",
+      "Iluminación": "Sin Iluminación"
+    },
+    {
+      "Nombre": "Fuente Gigabyte 750W 80 Plus Gold Modular GP-P750GM",
+      "Precio": 86150,
+      "Watts Nominal": "750 w",
+      "Watts Reales": "750 w",
+      "Formato": "ATX",
+      "Compatible Con Posición Inferior": "Si",
+      "Certificacion 80 Plus": "80 PLUS Gold",
+      "Modo Híbrido": "Si",
+      "Tipo De Cableado": "Full Modular",
+      "Ampers En Línea +12V": "61 a",
+      "Fuente Digital": "No",
+      "Color": "Negro",
+      "Iluminación": "Sin Iluminación"
+    },
+    {
+      "Nombre": "Fuente Corsair 850W 80 Plus Gold Modular RM850X",
+      "Precio": 106450,
+      "Watts Nominal": "850 w",
+      "Watts Reales": "850 w",
+      "Formato": "ATX",
+      "Compatible Con Posición Inferior": "Si",
+      "Certificacion 80 Plus": "80 PLUS Gold",
+      "Modo Híbrido": "Si",
+      "Tipo De Cableado": "Full Modular",
+      "Ampers En Línea +12V": "70.8 a",
+      "Fuente Digital": "No",
+      "Color": "Negro",
+      "Iluminación": "Sin Iluminación"
+    },
+    {
+      "Nombre": "Fuente Cooler Master 700W 80 Plus Gold G700",
+      "Precio": 72150,
+      "Watts Nominal": "700 w",
+      "Watts Reales": "700 w",
+      "Formato": "ATX",
+      "Compatible Con Posición Inferior": "Si",
+      "Certificacion 80 Plus": "80 PLUS Gold",
+      "Modo Híbrido": "No",
+      "Tipo De Cableado": "Cables fijos",
+      "Ampers En Línea +12V": "58.3 a",
+      "Fuente Digital": "No",
+      "Color": "Negro",
+      "Iluminación": "Sin Iluminación"
+    },
+    {
+      "Nombre": "Fuente Cooler Master 750W 80 Plus Gold SFX Mini ITX",
+      "Precio": 120750,
+      "Watts Nominal": "750 w",
+      "Watts Reales": "750 w",
+      "Formato": "SFX",
+      "Compatible Con Posición Inferior": "No",
+      "Certificacion 80 Plus": "80 PLUS Gold",
+      "Modo Híbrido": "Si",
+      "Tipo De Cableado": "Full Modular",
+      "Ampers En Línea +12V": "62.5 a",
+      "Fuente Digital": "No",
+      "Color": "Negro",
+      "Iluminación": "Sin Iluminación"
+    }
+  ]
+}
