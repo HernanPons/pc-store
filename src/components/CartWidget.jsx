@@ -6,7 +6,7 @@ const CartWidget = () => {
     <div className="carrito-container" >
       <button>
       <Text fontSize='xl' fontWeight='bold'>5</Text>
-        <img src="../public/Images/Carrito.png" alt="carrito de compras" />       
+        <img src="https://iili.io/JC5OLTg.png" alt="carrito de compras" />       
       </button>
     </div>
   )

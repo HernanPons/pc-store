@@ -41,7 +41,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
-                src='../public/Images/Processor.png'
+                src='https://iili.io/JC5ex87.png'
                 alt='Fluffybuns the destroyer'
                 mr='12px'
               />
@@ -51,7 +51,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='../public/Images/Ram.png'
+                src='https://iili.io/JC5ehMv.png'
                 alt='Simon the pensive'
                 mr='12px'
               />
@@ -61,7 +61,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='../public/Images/Mother.png'
+                src='https://iili.io/JC5eOcN.png'
                 alt='Simon the pensive'
                 mr='12px'
               />
@@ -71,7 +71,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='../public/Images/Power.png'
+                src='https://iili.io/JC5e8AX.png'
                 alt='Simon the pensive'
                 mr='12px'
               />
