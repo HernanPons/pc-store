@@ -20,7 +20,7 @@ const ItemDetail = () => {
             <Card maxW='sm'>
             <CardBody>
                 <Image
-                src='https://loremflickr.com/320/240'
+                src= {product.Img}
                 alt= {product.Nombre}
                 borderRadius='lg'
                 />
@@ -41,8 +41,7 @@ const ItemDetail = () => {
             <CardFooter>               
                 <Button variant='solid' colorScheme='blue'>
                     Agregar al carrito
-                </Button>             
-                <ItemCount />  
+                </Button>              
             </CardFooter>
             </Card>
           </div>

@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className='header'>
         <Flex align='center'>
-          <Link to={<ItemDetailContainer/>}>
+          
             <Image
               className='logo'
               boxSize='5rem'
@@ -17,13 +17,13 @@ const NavBar = () => {
               alt='PC-Store'
               mr='12px'
             />
-          </Link>  
-          <Link>
+            
+          
             <Text fontSize='xl' fontWeight='bold' className='pcStore'>PC-Store</Text>
-          </Link>
+          
 
           <Spacer />
-            <Input placeholder='Basic usage' />
+            <Input placeholder='Algun día seré un buscador' />
           <Spacer />
           <Box p='4' >
             <CartWidget />
@@ -41,7 +41,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
-                src='./public/Images/Processor.png'
+                src='../public/Images/Processor.png'
                 alt='Fluffybuns the destroyer'
                 mr='12px'
               />
@@ -51,7 +51,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='./public/Images/Ram.png'
+                src='../public/Images/Ram.png'
                 alt='Simon the pensive'
                 mr='12px'
               />
@@ -61,7 +61,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='./public/Images/Mother.png'
+                src='../public/Images/Mother.png'
                 alt='Simon the pensive'
                 mr='12px'
               />
@@ -71,7 +71,7 @@ const NavBar = () => {
               <Image
                 boxSize='2rem'
                 borderRadius='full'
-                src='./public/Images/Power.png'
+                src='../public/Images/Power.png'
                 alt='Simon the pensive'
                 mr='12px'
               />

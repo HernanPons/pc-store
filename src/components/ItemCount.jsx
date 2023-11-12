@@ -22,9 +22,9 @@ const ItemCount = () => {
 
     return (
         <div>
-            <p style={{ fontSize: '1.5rem', padding: '10px 20px'}}>{count}</p>
-            <button style={{ fontSize: '1.5rem', padding: '10px 20px' }} onClick={decrement}>-</button>
-            <button style={{ fontSize: '1.5rem', padding: '10px 20px' }} onClick={increment}>+</button>
+            <p>{count}</p>
+            <button onClick={decrement}>-</button>
+            <button onClick={increment}>+</button>
         </div>
     )
 }

@@ -9,7 +9,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setMostrarItemDetail(true);
-    }, 2000);
+    },);
 
     return () => 
       clearTimeout(timer);
