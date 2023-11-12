@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from 'react';
-import productosData from './productos.json';
+import productosData from '../data/Productos.json';
 import {Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, CardFooter, Image } from '@chakra-ui/react'
 import '../App.css'
+import ItemCount from './ItemCount.jsx'
 
 
-const PromiseComponent = () => {
+const ItemDetail = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    setProducts(productosData.Procesadores);
+    setProducts(productosData.Componentes);
   }, []);
 
   return (
@@ -20,7 +21,7 @@ const PromiseComponent = () => {
             <CardBody>
                 <Image
                 src='https://loremflickr.com/320/240'
-                alt='Green double couch with wooden legs'
+                alt= {product.Nombre}
                 borderRadius='lg'
                 />
                 <Stack mt='3' spacing='3'>
@@ -37,15 +38,11 @@ const PromiseComponent = () => {
                 </Stack>
             </CardBody>
             <Divider />
-            <CardFooter>
-                <ButtonGroup spacing='2'>
+            <CardFooter>               
                 <Button variant='solid' colorScheme='blue'>
-                    Buy now
-                </Button>
-                <Button variant='ghost' colorScheme='blue'>
-                    Add to cart
-                </Button>
-                </ButtonGroup>
+                    Agregar al carrito
+                </Button>             
+                <ItemCount />  
             </CardFooter>
             </Card>
           </div>
@@ -55,4 +52,4 @@ const PromiseComponent = () => {
   );
 };
 
-export default PromiseComponent;
+export default ItemDetail;

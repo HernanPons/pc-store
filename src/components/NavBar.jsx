@@ -2,22 +2,26 @@ import React from 'react'
 import CartWidget from './CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'
-
+import { Link } from 'react-router-dom' 
+import ItemDetailContainer from './ItemDetailContainer'
 
 const NavBar = () => {
   return (
     <div className='header'>
         <Flex align='center'>
-          <Image
-            className='logo'
-            boxSize='5rem'
-            src="https://i.pinimg.com/originals/1f/47/6b/1f476ba1a784f8750bacb054d41b06f7.jpg"
-            alt='PC-Store'
-            mr='12px'
-          />
-          
-          <Text fontSize='xl' fontWeight='bold' className='pcStore'>PC-Store</Text>
-              
+          <Link to={<ItemDetailContainer/>}>
+            <Image
+              className='logo'
+              boxSize='5rem'
+              src="https://i.pinimg.com/originals/1f/47/6b/1f476ba1a784f8750bacb054d41b06f7.jpg"
+              alt='PC-Store'
+              mr='12px'
+            />
+          </Link>  
+          <Link>
+            <Text fontSize='xl' fontWeight='bold' className='pcStore'>PC-Store</Text>
+          </Link>
+
           <Spacer />
             <Input placeholder='Basic usage' />
           <Spacer />
