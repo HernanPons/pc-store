@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import productosData from '../data/Productos.json';
 import { Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, CardFooter, Image } from '@chakra-ui/react';
 import '../App.css';
@@ -7,6 +7,7 @@ import '../App.css';
 const ItemID = () => {
   const { ID } = useParams();
   const [product, setProduct] = useState(null);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const selectedProduct = productosData.Componentes.find((p) => p.ID === ID);
@@ -16,6 +17,11 @@ const ItemID = () => {
   if (!product) {
     return <div>Producto no encontrado</div>;
   }
+
+  const GoBack = () => {
+    navigate(-1);
+  };
+
 
 
   //Agregar Boton para volver atras
@@ -31,6 +37,11 @@ const ItemID = () => {
   return (
     <div>
       <Card maxW='sm'>
+
+        <Button variant='solid' colorScheme='blue' onClick={GoBack}>
+            Volver atrás
+        </Button>
+
         <CardBody>
           <Image
             src={product.Img}
