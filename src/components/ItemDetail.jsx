@@ -3,19 +3,36 @@ import productosData from '../data/Productos.json';
 import {Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, CardFooter, Image } from '@chakra-ui/react'
 import '../App.css'
 import ItemCount from './ItemCount.jsx'
+import { useParams, Link } from 'react-router-dom'
+
 
 
 const ItemDetail = () => {
   const [products, setProducts] = useState([]);
-
+  
   useEffect(() => {
     setProducts(productosData.Componentes);
   }, []);
+  
+  const { Categoria } = useParams();
+  const filteredProducts = Categoria
+    ? products.filter((product) => product.Categoria === Categoria)
+    : products;
+
+  const {ID} = useParams ()
+
+
+
+
+
+  console.log(Categoria)
+  console.log(filteredProducts)
+   
 
   return (
     <div>
       <ul className='container'>
-        {products.map((product, index) => (
+        {filteredProducts.map((product, index) => (
           <div key={index}>
             <Card maxW='sm'>
             <CardBody>
@@ -38,10 +55,13 @@ const ItemDetail = () => {
                 </Stack>
             </CardBody>
             <Divider />
-            <CardFooter>               
+            <CardFooter>
+              <Link to={`/ItemID/${product.ID}`}>              
                 <Button variant='solid' colorScheme='blue'>
-                    Agregar al carrito
-                </Button>              
+                    Ver detalles
+                    {product.ID}
+                </Button>
+              </Link>               
             </CardFooter>
             </Card>
           </div>

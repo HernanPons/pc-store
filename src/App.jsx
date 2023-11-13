@@ -1,24 +1,28 @@
 import React from 'react'
 import ItemListContainer from './components/ItemListContainer'
 import NavBar from './components/NavBar.jsx'
-import PromiseComponent from './components/ItemDetail.jsx'
-import CardItem from './components/CardItem'
+
 import './App.css'
-import ItemDetailContainer from './components/ItemDetailContainer.jsx'
-import ItemCount from './components/ItemCount.jsx'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/Home.jsx'
+import ItemID from './components/ItemID.jsx'
+import Cart from './components/Cart.jsx'
 
 
 const App = () => {
   return (
+    <div>
     <BrowserRouter>
-      <div>
         
         <NavBar /> 
         
         <Routes>
-          <Route exact path='/' element={<ItemDetailContainer />} />
-
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/components/itemListContainer' element={<ItemListContainer />} />
+          <Route exact path='/categoria/:Categoria' element={<ItemListContainer />} />
+          <Route exact path='/itemID/:ID' element={<ItemID />} />
+          <Route exact path='/cart' element={<Cart />} />
 
 
 
@@ -29,8 +33,8 @@ const App = () => {
 
 
         </Routes>
-      </div>
     </BrowserRouter>
+    </div>
   )
 }
 

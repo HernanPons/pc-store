@@ -3,7 +3,7 @@ import CartWidget from './CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'
 import { Link } from 'react-router-dom' 
-import ItemDetailContainer from './ItemDetailContainer'
+import ItemDetailContainer from './ItemListContainer'
 
 const NavBar = () => {
   return (
@@ -37,7 +37,21 @@ const NavBar = () => {
             Categorias
           </MenuButton>
           <MenuList>
+
             <MenuItem minH='48px'>
+              <Link to={`./components/itemListContainer`}>
+              <Image
+                boxSize='2rem'
+                borderRadius='100full'
+                src='https://iili.io/JC5ex87.png'
+                alt='Fluffybuns the destroyer'
+                mr='12px'
+              /></Link>
+              <Link to={`./components/itemListContainer`}> Todos los productos </Link>
+            </MenuItem>
+            
+            <MenuItem minH='48px'>
+              <Link to={`./categoria/Procesador`}>
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
@@ -45,9 +59,14 @@ const NavBar = () => {
                 alt='Fluffybuns the destroyer'
                 mr='12px'
               />
-              <span>Procesadores</span>
+              </Link>
+              <Link to={`./categoria/Procesador`}>Procesadores</Link>
+
+              
             </MenuItem>
+
             <MenuItem minH='40px'>
+              <Link to={`./categoria/RAM`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -55,9 +74,12 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              <span>Memoria RAM</span>
+              </Link>
+              <Link to={`./categoria/RAM`}>Memoria RAM</Link>
             </MenuItem>
+
             <MenuItem minH='40px'>
+              <Link to={`./categoria/Mother`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -65,9 +87,12 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              <span>Placas Base</span>
+              </Link>
+              <Link to={`./categoria/Mother`}>Placas Base</Link>
             </MenuItem>
+
             <MenuItem minH='40px'>
+              <Link to={`./categoria/Fuente`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -75,12 +100,13 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              <span>Fuente de Alimentación</span>
+              </Link>
+              <Link to={`./categoria/Fuente`}>Fuente de Alimentación</Link>
             </MenuItem>
+
           </MenuList>
           </Menu>
           </Square>
-        
         </Flex>
         
         <hr className='hrNav'/>
