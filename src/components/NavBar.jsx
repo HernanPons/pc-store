@@ -52,23 +52,21 @@ const NavBar = () => {
               <Link to={`./components/itemListContainer`}> Todos los productos </Link>
             </MenuItem>
             
+            <Link to={`./categoria/Procesador`}>
             <MenuItem minH='48px'>
-              <Link to={`./categoria/Procesador`}>
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
                 src='https://iili.io/JC5ex87.png'
                 alt='Fluffybuns the destroyer'
                 mr='12px'
-              />
-              </Link>
-              <Link to={`./categoria/Procesador`}>Procesadores</Link>
-
-              
+              />  
+              <p>Procesadores</p>
             </MenuItem>
+            </Link>
 
+            <Link to={`./categoria/RAM`}>
             <MenuItem minH='40px'>
-              <Link to={`./categoria/RAM`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -76,12 +74,12 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              </Link>
-              <Link to={`./categoria/RAM`}>Memoria RAM</Link>
+              <p>Memoria RAM</p>
             </MenuItem>
+            </Link>
 
+            <Link to={`./categoria/Mother`}>
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Mother`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -89,12 +87,12 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              </Link>
-              <Link to={`./categoria/Mother`}>Placas Base</Link>
+              <p>Placas Base</p>
             </MenuItem>
+            </Link>
 
+            <Link to={`./categoria/Fuente`}>
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Fuente`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -102,9 +100,9 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              </Link>
-              <Link to={`./categoria/Fuente`}>Fuente de Alimentación</Link>
+              <p>Fuente de Alimentación</p>
             </MenuItem>
+            </Link>
 
           </MenuList>
           </Menu>
