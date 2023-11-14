@@ -3,6 +3,7 @@ import { useParams, useNavigate } from 'react-router-dom';
 import productosData from '../data/Productos.json';
 import { Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, CardFooter, Image } from '@chakra-ui/react';
 import '../App.css';
+import ItemCount from './ItemCount';
 
 const ItemID = () => {
   const { ID } = useParams();
@@ -64,6 +65,8 @@ const ItemID = () => {
           <Button variant='solid' colorScheme='blue'>
             Agregar al carrito
           </Button>
+          <ItemCount />
+
         </CardFooter>
       </Card>
     </div>
