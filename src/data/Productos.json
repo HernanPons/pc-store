@@ -603,7 +603,8 @@
       "Tipo": "DDR4",
       "Cantidad De Memorias": 2,
       "Latencia": "19 cl",
-      "Voltaje": "1.40 v"
+      "Voltaje": "1.40 v",
+      "Categoria": "RAM"
     },
     {
       "ID": "302",

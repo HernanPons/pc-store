@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <div className='header'>
         <Flex align='center'>
-          
+          <Link to={`./`}>
             <Image
               className='logo'
               boxSize='5rem'
@@ -17,17 +17,19 @@ const NavBar = () => {
               alt='PC-Store'
               mr='12px'
             />
-            
-          
+          </Link>
+          <Link to={`./`}>
             <Text fontSize='xl' fontWeight='bold' className='pcStore'>PC-Store</Text>
-          
+          </Link>
 
           <Spacer />
             <Input placeholder='Algun día seré un buscador' />
           <Spacer />
+          <Link to={`./components/Cart`}>
           <Box p='4' >
             <CartWidget />
           </Box>
+          </Link>
         </Flex>
         <hr className='hrNav'/>
         <Flex>
@@ -51,7 +53,7 @@ const NavBar = () => {
             </MenuItem>
             
             <MenuItem minH='48px'>
-              <Link to={`./categoria/Procesador`}>
+              <Link to={`./categoria/Cat1`}>
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
@@ -60,13 +62,13 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Procesador`}>Procesadores</Link>
+              <Link to={`./categoria/Cat1`}>Procesadores</Link>
 
               
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/RAM`}>
+              <Link to={`./categoria/Cat4`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -75,11 +77,11 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/RAM`}>Memoria RAM</Link>
+              <Link to={`./categoria/Cat4`}>Memoria RAM</Link>
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Mother`}>
+              <Link to={`./categoria/Cat2`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -88,11 +90,11 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Mother`}>Placas Base</Link>
+              <Link to={`./categoria/Cat2`}>Placas Base</Link>
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Fuente`}>
+              <Link to={`./categoria/Cat3`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -101,7 +103,7 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Fuente`}>Fuente de Alimentación</Link>
+              <Link to={`./categoria/Cat3`}>Fuente de Alimentación</Link>
             </MenuItem>
 
           </MenuList>

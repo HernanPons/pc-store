@@ -24,7 +24,6 @@ const ItemID = () => {
 
 
 
-  //Agregar Boton para volver atras
   //Crear pantalla de error de producto no encontrado
   //Cambiar estilo de pagina para que agregue mas detalles
   //Darle funcionalidad al carrito
@@ -44,7 +43,7 @@ const ItemID = () => {
 
         <CardBody>
           <Image
-            src={product.Img}
+            /* src={product.Img} */
             alt={product.Nombre}
             borderRadius='lg'
           />
