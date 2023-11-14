@@ -53,7 +53,7 @@ const NavBar = () => {
             </MenuItem>
             
             <MenuItem minH='48px'>
-              <Link to={`./categoria/Cat1`}>
+              <Link to={`./categoria/Procesador`}>
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
@@ -62,13 +62,13 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Cat1`}>Procesadores</Link>
+              <Link to={`./categoria/Procesador`}>Procesadores</Link>
 
               
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Cat4`}>
+              <Link to={`./categoria/RAM`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -77,11 +77,11 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Cat4`}>Memoria RAM</Link>
+              <Link to={`./categoria/RAM`}>Memoria RAM</Link>
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Cat2`}>
+              <Link to={`./categoria/Mother`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -90,11 +90,11 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Cat2`}>Placas Base</Link>
+              <Link to={`./categoria/Mother`}>Placas Base</Link>
             </MenuItem>
 
             <MenuItem minH='40px'>
-              <Link to={`./categoria/Cat3`}>
+              <Link to={`./categoria/Fuente`}>
               <Image
                 boxSize='2rem'
                 borderRadius='full'
@@ -103,7 +103,7 @@ const NavBar = () => {
                 mr='12px'
               />
               </Link>
-              <Link to={`./categoria/Cat3`}>Fuente de Alimentación</Link>
+              <Link to={`./categoria/Fuente`}>Fuente de Alimentación</Link>
             </MenuItem>
 
           </MenuList>
