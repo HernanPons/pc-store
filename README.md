@@ -1,4 +1,4 @@
 # pc-store
-<video width="320" height="240" controls>
-    <source src="./src/assets/recording.mkv" type="video">
-</video>
+
+https://github.com/HernanPons/pc-store/assets/138608914/5b942cc9-bc1c-416c-b9f0-ff8d290c6612
+
