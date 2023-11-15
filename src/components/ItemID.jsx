@@ -5,7 +5,7 @@ import { Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, Car
 import '../App.css';
 import ItemCount from './ItemCount';
 
-const ItemID = () => {
+const ItemDetail = () => {
   const { ID } = useParams();
   const [product, setProduct] = useState(null);
   const navigate = useNavigate();
@@ -28,9 +28,6 @@ const ItemID = () => {
   //Crear pantalla de error de producto no encontrado
   //Cambiar estilo de pagina para que agregue mas detalles
   //Darle funcionalidad al carrito
-  //Agregar ITEMCOUNT
-
-
 
 
 
@@ -73,4 +70,4 @@ const ItemID = () => {
   );
 };
 
-export default ItemID;
+export default ItemDetail;

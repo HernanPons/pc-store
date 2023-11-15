@@ -1,28 +1,33 @@
-import React, { useState, useEffect, Suspense, lazy } from 'react';
-import ItemDetail from './ItemDetail.jsx';
+import React, { useState, useEffect } from 'react';
+import ItemList from './ItemList.jsx';
+import { useParams } from 'react-router-dom';
+import productosData from '../data/Productos.json';
 
 
 
 const ItemListContainer = () => {
-  const [mostrarItemDetail, setMostrarItemDetail] = useState(false);
 
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setMostrarItemDetail(true);
-    },);
-
-    return () => 
-      clearTimeout(timer);
-  }, []);
+    const [products, setProducts] = useState([]);
+    
+    useEffect(() => {
+      setProducts(productosData.Componentes);
+    }, []);
+    
+    const { Categoria } = useParams();
+    const filteredProducts = Categoria
+      ? products.filter((product) => product.Categoria === Categoria)
+      : products;
+  
+    const {ID} = useParams ()
 
   return (
-    <Suspense fallback={<div>Cargando...</div>}>
-    <div>
-      {mostrarItemDetail && (
-          <ItemDetail />
-      )}
-    </div>
-    </Suspense>
+    <div>      
+      <ItemList
+      products={filteredProducts}
+      categoria={Categoria}
+      id={ID}
+       />     
+    </div>    
   );
 };
 

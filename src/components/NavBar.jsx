@@ -40,19 +40,20 @@ const NavBar = () => {
           </MenuButton>
           <MenuList>
 
+            <Link to={`./productos`}>
             <MenuItem minH='48px'>
-              <Link to={`./components/itemListContainer`}>
               <Image
                 boxSize='2rem'
                 borderRadius='100full'
                 src='https://iili.io/JC5ex87.png'
                 alt='Fluffybuns the destroyer'
                 mr='12px'
-              /></Link>
-              <Link to={`./components/itemListContainer`}> Todos los productos </Link>
+              />
+              <p>Todos los productos</p>
             </MenuItem>
+            </Link>
             
-            <Link to={`./categoria/Procesador`}>
+            <Link to={`./productos/Procesador`}>
             <MenuItem minH='48px'>
               <Image
                 boxSize='2rem'
@@ -65,7 +66,7 @@ const NavBar = () => {
             </MenuItem>
             </Link>
 
-            <Link to={`./categoria/RAM`}>
+            <Link to={`./productos/RAM`}>
             <MenuItem minH='40px'>
               <Image
                 boxSize='2rem'
@@ -78,7 +79,7 @@ const NavBar = () => {
             </MenuItem>
             </Link>
 
-            <Link to={`./categoria/Mother`}>
+            <Link to={`./productos/Mother`}>
             <MenuItem minH='40px'>
               <Image
                 boxSize='2rem'
@@ -91,7 +92,7 @@ const NavBar = () => {
             </MenuItem>
             </Link>
 
-            <Link to={`./categoria/Fuente`}>
+            <Link to={`.//Fuente`}>
             <MenuItem minH='40px'>
               <Image
                 boxSize='2rem'
