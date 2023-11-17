@@ -1,52 +1,58 @@
-import React, { useEffect, useState, lazy } from 'react';
-import productosData from '../data/Productos.json';
-import {Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, CardFooter, Image } from '@chakra-ui/react'
+import React from 'react';
+import { Button, Image} from '@chakra-ui/react'
 import '../App.css'
 import ItemCount from './ItemCount.jsx'
 import { useParams, Link } from 'react-router-dom'
+import './ItemDetail.css'
+import ProceadorDetail from './ProceadorDetail.jsx';
+import MotherDetail from './MotherDetail.jsx';
+import FuenteDetail from './FuenteDetail.jsx';
+import RamDetail from './RamDetail.jsx';
 
+const ItemDetail = ({ GoBack, product }) => {
 
+const cuotas = () => {
+  const result = product.Precio / 6;
+  return result.toFixed(2);
+};
 
-const ItemDetail = ({GoBack, product }) => {
-  
 
   return (
-    <div>
-      <Card maxW='sm'>
 
-        <Button variant='solid' colorScheme='blue' onClick={GoBack}>
-            Volver atrás
-        </Button>
+  <div className='containerBody'>  
+    <Button className='buttonVolver' onClick={GoBack}>
+      Volver
+    </Button>
+    <div className='containerItem'>
+      <div className='containerImg'>
+        <Image src={product.Img} />
+      </div>
+      <div className='containerText'>
+        <h1>
+          {product.Nombre}
+        </h1>
+        <h4>
+          {product.Familia}
+          {product.ChipsetsPrincipal}
+        </h4>
+        <h2>
+          ${product.Precio}
+        </h2>
+        
+        {product.Categoria === 'Procesador' && <ProceadorDetail product={product} />}
+        {product.Categoria === 'Mother' && <MotherDetail product={product} />}
+        {product.Categoria === 'Fuente' && <FuenteDetail product={product} />}
+        {product.Categoria === 'RAM' && <RamDetail product={product} />}
 
-        <CardBody>
-          <Image
-            /* src={product.Img} */
-            alt={product.Nombre}
-            borderRadius='lg'
-          />
-          <Stack mt='3' spacing='3'>
-            <Heading size='md'>
-              {product.Familia} 
-              {product.ChipsetsPrincipal}
-            </Heading>
-            <Text className='descripcionCard'>
-              {product.Nombre}
-            </Text>
-            <Text color='blue.600' fontSize='2xl'>
-              ${product.Precio}
-            </Text>
-          </Stack>
-        </CardBody>
-        <Divider />
-        <CardFooter>
-          <Button variant='solid' colorScheme='blue'>
-            Agregar al carrito
-          </Button>
-          <ItemCount />
-
-        </CardFooter>
-      </Card>
+      </div>
+      
+      <div className='containerPay'>  
+        <h4>
+          Mismo precio en 6 cuotas de ${cuotas ()}
+        </h4>
+      </div>
     </div>
+  </div>    
   );
 };
 

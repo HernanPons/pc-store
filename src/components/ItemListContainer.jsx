@@ -1,19 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
-import productosData from '../data/Productos.json';
+/* import productosData from '../data/Productos.json'; */
 
 
 
 const ItemListContainer = () => {
-
     const [products, setProducts] = useState([]);
+    const { Categoria } = useParams();
     
     useEffect(() => {
-      setProducts(productosData.Componentes);
+      const fetchData = async () => {
+        try {
+          const response = await fetch('/src/data/Productos.json');
+          const productosData = await response.json();
+          setProducts(productosData.Componentes);
+        } catch (error) {
+          console.log('Error al obtener los archivos:', error);
+        }
+      };
+  
+      fetchData();
     }, []);
     
-    const { Categoria } = useParams();
     const filteredProducts = Categoria
       ? products.filter((product) => product.Categoria === Categoria)
       : products;

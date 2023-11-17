@@ -1,0 +1,38 @@
+.containerBody {
+    background-color: bisque;
+}
+
+.containerItem {
+    display: flex;
+    margin: 10px 50px 50px 50px;
+    gap: 50px;
+    flex: 1fr 1fr 1fr;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.buttonVolver{
+    margin-left: 50px;    
+}
+.containerImg {
+    height: 400px;
+    max-width: 600px;
+}
+.containerText {
+    max-width: 400px;
+    max-height: 600px;
+}
+.containerPay {
+    max-width: 400px;
+    max-height: 600px;
+    border: 1px solid rgb(150, 150, 150);
+    padding: 15px;
+    border-radius: 1rem;
+}
+h1 {
+    font-size: 30px;
+}
+h2 {
+    font-size: 42px;
+}

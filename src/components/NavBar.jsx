@@ -3,7 +3,7 @@ import CartWidget from './CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'
 import { Link } from 'react-router-dom' 
-import ItemDetailContainer from './ItemListContainer'
+
 
 const NavBar = () => {
   return (
@@ -92,7 +92,7 @@ const NavBar = () => {
             </MenuItem>
             </Link>
 
-            <Link to={`.//Fuente`}>
+            <Link to={`./productos/Fuente`}>
             <MenuItem minH='40px'>
               <Image
                 boxSize='2rem'
