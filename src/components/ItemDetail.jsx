@@ -47,9 +47,17 @@ const cuotas = () => {
       </div>
       
       <div className='containerPay'>  
-        <h4>
-          Mismo precio en 6 cuotas de ${cuotas ()}
-        </h4>
+        <div className='payItemsTop'>
+          <span>Mismo precio en 6 cuotas de ${cuotas ()}</span>
+        </div>
+        <div className='payItems'>
+          <span>STOCK DISPONIBLE</span>
+          <span>Cantidad</span>
+          <ItemCount />
+          <Button variant='solid' colorScheme='blue'>
+            Agregar al carrito                   
+          </Button>
+        </div>
       </div>
     </div>
   </div>    

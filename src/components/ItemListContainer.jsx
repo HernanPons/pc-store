@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
-/* import productosData from '../data/Productos.json'; */
 
 
 

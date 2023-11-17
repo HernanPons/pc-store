@@ -2,7 +2,7 @@
   "Componentes": [
     {
       "ID": "001",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/mUJKxoB.jpg",
       "Nombre": "Procesador AMD RYZEN 3 3200G 4.0GHz Turbo + Radeon Vega 8 AM4 Wraith Stealth Cooler",
       "Precio": 93400,
       "Modelo": "Ryzen 3 3200G",
@@ -18,7 +18,7 @@
     },
     {
       "ID": "002",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/fNKy8F4.jpg",
       "Nombre": "Procesador AMD Ryzen 7 5700G 4.6GHz Turbo + Wraith Stealth Cooler",
       "Precio": 241900,
       "Modelo": "5700G",
@@ -34,7 +34,7 @@
     },
     {
       "ID": "003",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/K5DY1qA.jpg",
       "Nombre": "Procesador AMD Ryzen 9 5950X 4.9GHz Turbo AM4 - No incluye Cooler",
       "Precio": 615900,
       "Modelo": "5950X",
@@ -50,7 +50,7 @@
     },
     {
       "ID": "004",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/dg9cWeo.jpg",
       "Nombre": "Procesador AMD RYZEN 5 3600 4.2GHz Turbo AM4 Wraith Stealth Cooler",
       "Precio": 135850,
       "Modelo": "Ryzen 5 3600",
@@ -66,7 +66,7 @@
     },
     {
       "ID": "005",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/aa62k3M.jpg",
       "Nombre": "Procesador Intel Core i5 10400 4.3GHz Turbo Socket 1200 Comet Lake",
       "Precio": 161150,
       "Modelo": "Core i5 10400",
@@ -82,7 +82,7 @@
     },
     {
       "ID": "006",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/U5zZsek.jpg",
       "Nombre": "Procesador Intel Core i3 10105F 4.4GHz Turbo Socket 1200 Comet Lake",
       "Precio": 79500,
       "Modelo": "10105F",
@@ -127,7 +127,7 @@
     
     {
       "ID": "101",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/Zj7fMWm.png",
       "Nombre": "Mother MSI A520M-A PRO DDR4 AM4",
       "Precio": 77000,
       "Plataforma": "AMD",
@@ -161,7 +161,7 @@
     },
     {
       "ID": "102",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/y10zJoQ.jpg",
       "Nombre": "Mother ASUS PRIME A520M-K DDR4 AM4",
       "Precio": 77990,
       "Plataforma": "AMD",
@@ -195,7 +195,7 @@
     },
     {
       "ID": "103",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/F2vXhMk.jpg",
       "Nombre": "Mother MSI A320M-A PRO AM4",
       "Precio": 82900,
       "Plataforma": "AMD",
@@ -228,7 +228,7 @@
     },
     {
       "ID": "104",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/GWykdWd.jpg",
       "Nombre": "Mother MSI B450M-A PRO MAX",
       "Precio": 87900,
       "Plataforma": "AMD",
@@ -262,7 +262,7 @@
     },
     {
       "ID": "105",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/5d9Vrxs.jpg",
       "Nombre": "Mother Asrock A620M-HDV/M.2+ AM5 DDR5",
       "Precio": 114900,
       "Plataforma": "AMD",
@@ -296,7 +296,7 @@
     },
     {
       "ID": "106",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/W8zhOOc.jpg",
       "Nombre": "Mother GIGABYTE X570SI AORUS PRO AX AM4 Mini ITX DDR4",
       "Precio": 244750,
       "Plataforma": "AMD",
@@ -330,7 +330,7 @@
     },
     {
       "ID": "107",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/VJjluEb.jpg",
       "Nombre": "Mother Asrock Z390 Phantom Gaming 4S Wi-Fi BULK Pack",
       "Precio": 42100,
       "Plataforma": "Intel",
@@ -364,7 +364,7 @@
     },
     {
       "ID": "108",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/Onx63xF.jpg",
       "Nombre": "Mother ASUS PRIME H510M-K R2.0 Socket 1200",
       "Precio": 85000,
       "Plataforma": "Intel",
@@ -398,7 +398,7 @@
     },
     {
       "ID": "109",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/RvcEPBL.jpg",
       "Nombre": "Mother Gigabyte H510M H M-ATX S1200",
       "Precio": 89900,
       "Plataforma": "Intel",
@@ -432,7 +432,7 @@
     },
     {
       "ID": "110",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/eTLetsB.jpg",
       "Nombre": "Mother ASUS TUF GAMING B760M-PLUS WIFI D4 12/13th Gen LGA1700 DDR4",
       "Precio": 193530,
       "Plataforma": "Intel",
@@ -485,7 +485,7 @@
 
     {
       "ID": "201",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/Kr0Iw87.jpg",
       "Familia": "Be Quiet 1000W",
       "Nombre": "Fuente Be Quiet 1000W 80 Plus Gold PURE POWER 11 Full Modular",
       "Precio": 113000,
@@ -504,7 +504,7 @@
     },
     {
       "ID": "202",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/LcGNFrk.jpg",
       "Familia": "Gigabyte 750W",
       "Nombre": "Fuente Gigabyte 750W 80 Plus Gold Modular GP-P750GM",
       "Precio": 86150,
@@ -523,7 +523,7 @@
     },
     {
       "ID": "203",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/pg9FHA4.jpg",
       "Familia": "Corsair 850W",
       "Nombre": "Fuente Corsair 850W 80 Plus Gold Modular RM850X",
       "Precio": 106450,
@@ -542,7 +542,7 @@
     },
     {
       "ID": "204",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/sTUjSwl.jpg",
       "Familia": "Cooler Master 700W",
       "Nombre": "Fuente Cooler Master 700W 80 Plus Gold G700",
       "Precio": 72150,
@@ -561,7 +561,7 @@
     },
     {
       "ID": "205",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/RAJsa8D.jpg",
       "Familia": "Cooler Master 750W",
       "Nombre": "Fuente Cooler Master 750W 80 Plus Gold SFX Mini ITX",
       "Precio": 120750,
@@ -594,7 +594,7 @@
 
     {
       "ID": "301",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/q5knVvY.jpg",
       "Familia": "DDR4 16gb",
       "Nombre": "Memoria Adata DDR4 16GB (2x8GB) 4133MHz XPG Spectrix D60G RGB",
       "Precio": 71700,
@@ -608,7 +608,7 @@
     },
     {
       "ID": "302",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/y3VwD1A.jpg",
       "Familia": "DDR4 8gb",
       "Nombre": "Memoria Corsair DDR4 8GB 2666Mhz Vengeance LPX Black",
       "Precio": 26850,
@@ -622,7 +622,7 @@
     },
     {
       "ID": "303",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/dLRQt7Y.jpg",
       "Familia": "DDR4 16gb",
       "Nombre": "Memoria Corsair DDR4 16GB (2x8GB) 2666MHz Vengeance RGB PRO White",
       "Precio": 58400,
@@ -636,7 +636,7 @@
     },
     {
       "ID": "304",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/i68eutX.jpg",
       "Familia": "DDR4 16gb",
       "Nombre": "Memoria GeiL DDR4 16GB (2x8GB) 3600MHz Orion Red RGB",
       "Precio": 52900,
@@ -650,7 +650,7 @@
     },
     {
       "ID": "305",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/zCNRIel.jpg",
       "Familia": "DDR4 16gb",
       "Nombre": "Memoria GeiL DDR4 16GB (2x8GB) 3600MHz Orion RGB",
       "Precio": 57850,
@@ -664,7 +664,7 @@
     },
     {
       "ID": "306",
-      "Img": "https://loremflickr.com/320/240",
+      "Img": "https://i.imgur.com/rbcneO9.jpg",
       "Familia": "DDR4 16gb",
       "Nombre": "Memoria Patriot Viper DDR4 16GB (2x8GB) 3200MHz Steel RGB",
       "Precio": 52800,

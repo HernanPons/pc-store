@@ -19,12 +19,12 @@ const useCount = (initial = 0) => {
 }
 
 const ItemCount = () => {
-    const { count, decrement, increment, reset } = useCount();
+    const { count, decrement, increment } = useCount();
 
     return (
-        <div style={{ display: 'flex', marginLeft: '40px' }}>
-            <Button style={{ marginRight: '5px' }} onClick={decrement}>-</Button>
-            <p style={{ marginLeft: '20px', marginRight: '20px' }}>{count}</p>
+        <div style={{ display: 'flex'}}>
+            <Button onClick={decrement}>-</Button>
+            <Button style={{ marginLeft: '20px', marginRight: '20px' }}>{count}</Button>
             <Button onClick={increment}>+</Button>
         </div>
     )
