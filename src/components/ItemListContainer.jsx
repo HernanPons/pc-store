@@ -11,7 +11,7 @@ const ItemListContainer = () => {
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch('./Productos.json');
+          const response = await fetch('../Productos.json');
           const productosData = await response.json();
           setProducts(productosData.Componentes);
         } catch (error) {

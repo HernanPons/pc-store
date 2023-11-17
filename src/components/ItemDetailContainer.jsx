@@ -1,21 +1,17 @@
-import React, { useEffect, useState, lazy } from 'react';
-/* import productosData from '../data/Productos.json'; */
+import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-
-
-const ItemDetail = lazy(() => import('./ItemDetail.jsx'));
-
+import ItemDetail from './ItemDetail.jsx';
 
 const ItemDetailContainer = () => {
   const { ID } = useParams();
   const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true)
+  const [loading, setLoading] = useState(true);
   const navigate = useNavigate();
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('./Productos.json');
+        const response = await fetch('/Productos.json');
         const productosData = await response.json();
         const selectedProduct = productosData.Componentes.find((p) => p.ID === ID);
         setProduct(selectedProduct);
@@ -40,14 +36,12 @@ const ItemDetailContainer = () => {
   };
 
   return (
-    <React.Suspense fallback={<div>Cargando...</div>}>
-      <ItemDetail 
+    <ItemDetail 
       GoBack={GoBack} 
       product={product} 
       id={ID} 
-      />
-    </React.Suspense>
-  )
-}
+    />
+  );
+};
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
