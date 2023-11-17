@@ -15,7 +15,7 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/src/data/Productos.json');
+        const response = await fetch('./src/data/Productos.json');
         const productosData = await response.json();
         const selectedProduct = productosData.Componentes.find((p) => p.ID === ID);
         setProduct(selectedProduct);
