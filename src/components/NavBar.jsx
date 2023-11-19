@@ -23,7 +23,7 @@ const NavBar = () => {
           </Link>
 
           <Spacer />
-            <Input placeholder='Algun día seré un buscador' />
+            <Input className='buscadorHeader' placeholder='Algun día seré un buscador' />
           <Spacer />
           <Link to={`./components/Cart`}>
           <Box p='4' >
@@ -32,9 +32,9 @@ const NavBar = () => {
           </Link>
         </Flex>
         <hr className='hrNav'/>
-        <Flex>
+        <Flex className='navCategorias'>
           <Square size='70px'>
-          <Menu>
+          <Menu className='botonCategorias'>
           <MenuButton>
             Categorias
           </MenuButton>

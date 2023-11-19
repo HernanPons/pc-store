@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import './Item.css'
 
 const Item = ({ product }) => {
-  return (
+  return (   
     <div key={product.ID} className='itemCard'>
         <Card maxW='sm'>
             <CardBody>

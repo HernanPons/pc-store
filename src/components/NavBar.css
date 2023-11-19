@@ -7,10 +7,27 @@
 
 .pcStore {
     width: 150px;
+    margin-left: 20px;
 }
 
 .hrNav {
     border: 1px solid #ccc;
     margin: 0px -50px;
-  }
-  
+}
+
+.navCategorias {
+    background-color: rgb(150, 150, 150);
+    margin: 0 -50px;
+    padding: 0 50px;
+}
+
+.botonCategorias {
+    position: absolute;
+    left: 50px;
+}
+
+.buscadorHeader {
+    max-width: 500px;
+    align-content: center;
+    margin-right: 200px;
+}
