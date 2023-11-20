@@ -3,6 +3,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css'
+import Categorias from './Categorias';
+
 
 
 const Home = () => {
@@ -49,6 +51,7 @@ const Home = () => {
   }, []);
 
   return (
+    <div>
     <Slider {...settings} ref={sliderRef}>
       {imageUrls.map((url, index) => (
         <div key={index}>
@@ -56,6 +59,9 @@ const Home = () => {
         </div>
       ))}
     </Slider>
+
+    <Categorias />
+    </div>
   );
 };
 

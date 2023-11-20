@@ -10,6 +10,7 @@ import ItemDetailContainer from './components/ItemDetailContainer.jsx'
 import ShoppingCartProvider from './Context/ShoppingCartContext.jsx'
 import Loader from './components/Loader.jsx'
 import Footer from './components/Footer.jsx';
+import PagTrabajando from './components/PagTrabajando.jsx'
 
 const App = () => {
   const [showLoader, setShowLoader] = useState(true);
@@ -39,6 +40,7 @@ const App = () => {
               <Route exact path='/productos/:Categoria' element={<ItemListContainer />} />
               <Route exact path='/producto/:ID' element={<ItemDetailContainer />} />
               <Route exact path='/cart' element={<Cart />} />
+              <Route exact path='/PagTrabajando' element={<PagTrabajando />} />
             </Routes>
             )}
             <Footer />

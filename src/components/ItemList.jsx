@@ -12,7 +12,7 @@ const ItemList = ({ products, categoria, id }) => {
   useEffect(() => {
     setTimeout(() => {
       setShowLoader(false);
-    }, 1000)});
+    }, 250)});
 
 
   return (

@@ -2,6 +2,7 @@ import React from 'react';
 import { Box, Container, Stack, SimpleGrid, Text, VisuallyHidden, chakra, useColorModeValue } from '@chakra-ui/react';
 import { FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
 import './Footer.css'
+import { Link } from 'react-router-dom' 
 
 
 const ListHeader = ({ children }) => {
@@ -47,15 +48,21 @@ const Footer = () => {
         <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
+            <Link to={`./PagTrabajando`}>
             <Box as="a" href={'#'}>
               Acerca de nosotros
             </Box>
+            </Link>
+            <Link to={`./PagTrabajando`}>
             <Box as="a" href={'#'}>
               Trabajá con nosotros
             </Box>
+            </Link>
+            <Link to={`./PagTrabajando`}>
             <Box as="a" href={'#'}>
               Contactanos
             </Box>
+            </Link>
           </Stack>
 
           <Stack align={'flex-start'}>
