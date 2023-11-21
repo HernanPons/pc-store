@@ -5,15 +5,16 @@ const FuenteDetail = (props) => {
   return (
     <div>
         <>
-            <li>Socket: {product.Socket}</li>
-            <li>Chipsets Principal: {product.ChipsetsPrincipal}</li>
-            <li>Cantidad De Slot Pci-e 16X: {product["Cantidad De Slot Pci-e 16X"]}</li>
-            <li>Cantidad De Slot Pci-e 1X: {product["Cantidad De Slot Pci-e 1X"]}</li>
-            <li>Cantidad de hilos: {product.Hilos}</li>
-            <li>Puertos Sata: {product["Puertos Sata"]}</li>       
-            <li>Salidas Vga: {product["Salidas Vga"]}</li>       
-            <li>Salidas Hdmi: {product["Salidas Hdmi"]}</li>
-            <li>Cantidad De Slot De Memorias: {product["Cantidad De Slot De Memorias"]}</li>
+            <li>Watts Nominal: {product["Watts Nominal"]}</li>
+            <li>Watts Reales: {product["Watts Reales"]}</li>
+            <li>Compatible Con Posición Inferior: {product["Compatible Con Posición Inferior"]}</li>       
+            <li>Certificacion 80 Plus: {product["Certificacion 80 Plus"]}</li>       
+            <li>Modo Híbrido: {product["Modo Híbrido"]}</li>           
+            <li>Ampers En Línea +12V: {product["Ampers En Línea +12V"]}</li>
+            <li>Tipo De Cableado: {product["Tipo De Cableado"]}</li>
+            <li>Color: {product.Color}</li>
+            <li>Iluminación: {product.Iluminación}</li>
+            <li>Fuente Digital: {product["Fuente Digital"]}</li>
         </>
     </div>
   )
