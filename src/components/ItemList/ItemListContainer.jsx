@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ItemList from './ItemList.jsx';
 import { useParams } from 'react-router-dom';
+import './Item.css'
 
 
 
@@ -29,7 +30,7 @@ const ItemListContainer = () => {
     const {ID} = useParams ()
 
   return (
-    <div>      
+    <div className='itemBody'>      
       <ItemList
       products={filteredProducts}
       categoria={Categoria}

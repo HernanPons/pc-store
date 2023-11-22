@@ -1,5 +1,5 @@
 import React from 'react'
-import CartWidget from './CartWidget'
+import CartWidget from '../Cart/CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'
 import { Link } from 'react-router-dom' 
@@ -25,7 +25,7 @@ const NavBar = () => {
           <Spacer />
             <Input className='buscadorHeader' placeholder='Algun día seré un buscador' />
           <Spacer />
-          <Link to={`./components/Cart`}>
+          <Link to={`./components/Cart/Cart`}>
           <Box p='4' >
             <CartWidget />
           </Box>

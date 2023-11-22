@@ -8,7 +8,7 @@ const Categorias = () => {
     <Box className="categorias-container">
       <SimpleGrid spacing={5} templateColumns={{ base: '1fr', md: 'repeat(2, 1fr)', lg: 'repeat(4, 1fr)' }}>
         <Link to={`./productos/Procesador`}>
-        <Card>
+        <Card className='cardCat'>
           <CardHeader>
             <Heading size='md'> Procesadores</Heading>
           </CardHeader>
@@ -21,7 +21,7 @@ const Categorias = () => {
         </Card>
         </Link>
         <Link to={`./productos/Mother`}>
-        <Card>
+        <Card className='cardCat'>
           <CardHeader>
             <Heading size='md'> Placas Base</Heading>
           </CardHeader>
@@ -34,7 +34,7 @@ const Categorias = () => {
         </Card>
         </Link>
         <Link to={`./productos/Fuente`}>
-        <Card>
+        <Card className='cardCat'>
           <CardHeader>
             <Heading size='md'> Fuentes de Alimentacion</Heading>
           </CardHeader>
@@ -47,7 +47,7 @@ const Categorias = () => {
         </Card>
         </Link>
         <Link to={`./productos/RAM`}>
-        <Card>
+        <Card className='cardCat'>
           <CardHeader>
             <Heading size='md'> Memorias RAM</Heading>
           </CardHeader>

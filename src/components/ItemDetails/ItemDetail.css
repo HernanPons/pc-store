@@ -1,5 +1,6 @@
 .containerBody {
-    background-color: bisque;
+    background-color: rgb(220, 220, 220);
+    padding-bottom: 1px;
 }
 
 .containerItem {

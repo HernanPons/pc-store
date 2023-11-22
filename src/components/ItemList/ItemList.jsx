@@ -3,7 +3,7 @@ import { Card, CardBody, Stack, Heading, Text, Divider, ButtonGroup, Button, Car
 import { useParams, Link } from 'react-router-dom';
 import Item from './Item';
 import './Item.css'
-import Loader from './Loader';
+import Loader from '../Loader';
 
 const ItemList = ({ products, categoria, id }) => {
 
@@ -18,16 +18,14 @@ const ItemList = ({ products, categoria, id }) => {
   return (
     <div>
       {showLoader ? (
-              <div>
-                {<Loader />}
-              </div>
+        <div> {<Loader />} </div>
             ) : (
-      <ul className='container'>
-        {products.map((product) => (
-          <Item key={product.ID} product={product} />
-        ))}
-      </ul>
-            )}
+          <ul className='container'>
+            {products.map((product) => (
+              <Item key={product.ID} product={product} />
+            ))}
+          </ul>
+        )}
     </div>
   );
 };

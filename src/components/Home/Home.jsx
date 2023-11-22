@@ -3,7 +3,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './Home.css'
-import Categorias from './Categorias';
+import Categorias from '../Categorias';
 
 
 
@@ -20,7 +20,7 @@ const Home = () => {
       {'>'}
     </div>
   );
-  // Configuración del carrusel
+  
   const settings = {
     dots: false,
     infinite: true,
@@ -28,20 +28,16 @@ const Home = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000, // Cambia de imagen cada 2 segundos
+    autoplaySpeed: 2000,
     prevArrow: <CustomPrevArrow />,
     nextArrow: <CustomNextArrow />,
   };
-
-
-  // Lista de URLs de imágenes
   const imageUrls = [
     "https://imgur.com/BPr5jdZ.jpeg" ,
     "https://imgur.com/hCGk895.jpeg" ,
     "https://imgur.com/HSd79mE.jpeg" ,
   ];
 
-  // Función para detener el carrusel cuando el componente se desmonta
   useEffect(() => {
     return () => {
       if (sliderRef.current) {

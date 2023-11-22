@@ -1,13 +1,13 @@
 import React from 'react';
 import { Button, Image} from '@chakra-ui/react'
-import '../App.css'
+/* import '../App.css' */
 import ItemCount from './ItemCount.jsx'
 import { useParams, Link } from 'react-router-dom'
 import './ItemDetail.css'
-import ProceadorDetail from './ProceadorDetail.jsx';
-import MotherDetail from './MotherDetail.jsx';
-import FuenteDetail from './FuenteDetail.jsx';
-import RamDetail from './RamDetail.jsx';
+import ProceadorDetail from '../CatDetails/ProceadorDetail.jsx';
+import MotherDetail from '../CatDetails/MotherDetail.jsx';
+import FuenteDetail from '../CatDetails/FuenteDetail.jsx';
+import RamDetail from '../CatDetails/RamDetail.jsx';
 
 const ItemDetail = ({ GoBack, product }) => {
 
