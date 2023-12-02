@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Button, Image} from '@chakra-ui/react'
 /* import '../App.css' */
 import ItemCount from './ItemCount.jsx'
@@ -18,6 +18,7 @@ const cuotas = () => {
 
 
   return (
+
 
   <div className='containerBody'>  
     <Button className='buttonVolver' onClick={GoBack}>
@@ -53,10 +54,10 @@ const cuotas = () => {
         <div className='payItems'>
           <span>STOCK DISPONIBLE</span>
           <span>Cantidad</span>
-          <ItemCount />
-          <Button variant='solid' colorScheme='blue'>
-            Agregar al carrito                   
-          </Button>
+          <ItemCount
+            product={product}
+          />
+          
         </div>
       </div>
     </div>

@@ -49,17 +49,17 @@ const Footer = () => {
           <Stack align={'flex-start'}>
             <ListHeader>Company</ListHeader>
             <Link to={`./PagTrabajando`}>
-            <Box as="a" href={'#'}>
+            <Box>
               Acerca de nosotros
             </Box>
             </Link>
             <Link to={`./PagTrabajando`}>
-            <Box as="a" href={'#'}>
+            <Box>
               Trabajá con nosotros
             </Box>
             </Link>
             <Link to={`./PagTrabajando`}>
-            <Box as="a" href={'#'}>
+            <Box>
               Contactanos
             </Box>
             </Link>
@@ -78,7 +78,7 @@ const Footer = () => {
             </Box>
           </Stack>
 
-          <img src="https://i.pinimg.com/originals/1f/47/6b/1f476ba1a784f8750bacb054d41b06f7.jpg" alt="" />
+          <img src="https://i.pinimg.com/originals/1f/47/6b/1f476ba1a784f8750bacb054d41b06f7.jpg" alt="Logo" />
 
           <Stack align={'flex-start'}>
 

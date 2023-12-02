@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom';
 import './Item.css'
 
 
-
 const ItemListContainer = () => {
     const [products, setProducts] = useState([]);
     const { Categoria } = useParams();
@@ -28,6 +27,7 @@ const ItemListContainer = () => {
       : products;
   
     const {ID} = useParams ()
+
 
   return (
     <div className='itemBody'>      

@@ -6,6 +6,9 @@ import { Link } from 'react-router-dom'
 
 
 const NavBar = () => {
+
+  
+
   return (
     <div className='header'>
         <Flex align='center'>

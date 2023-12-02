@@ -30,7 +30,7 @@ const Item = ({ product }) => {
             <CardFooter>
                 <Link to={`/producto/${product.ID}`}>              
                     <Button variant='solid' colorScheme='blue'>
-                        Ver detalles
+                        Ver más detalles
                     </Button>
                 </Link>               
             </CardFooter>
