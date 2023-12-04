@@ -1,39 +1,50 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import ItemDetail from './ItemDetail.jsx';
+import { collection, doc, getDocs, getFirestore, query, where } from "firebase/firestore"
+import Loader from '../Loader.jsx';
 
 const ItemDetailContainer = () => {
-  const { ID } = useParams();
-  const [product, setProduct] = useState(null);
-  const [loading, setLoading] = useState(true);
-  const navigate = useNavigate();
+  const [product, setProduct] = useState({})
+  const navigate = useNavigate()
+  const { ID } = useParams()
+  const [loading, setLoading] = useState(true)
+  window.scrollTo(0, 0);
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch('/Productos.json');
-        const productosData = await response.json();
-        const selectedProduct = productosData.Componentes.find((p) => p.ID === ID);
-        setProduct(selectedProduct);
-        setLoading(false);
-      } catch (error) {
-        console.log('Error al obtener los archivos:', error);
-      }
-    };
-
-    fetchData();
+    const fetchProduct = async () => {
+        const db = getFirestore();
+        const itemsCollection = collection(db, "Componentes");
+        const q = query(itemsCollection, where("ID", "==", ID));
+        
+        try {
+          const oneItem = await getDocs(q);
+  
+          if (oneItem.size > 0) {
+            const docData = oneItem.docs[0].data();
+            setProduct(docData);
+          } else {
+            console.log("Producto no encontrado");
+          }
+        } catch (error) {
+          console.error("Error al obtener el documento:", error);
+        } finally {
+          setLoading(false);
+  
+        }
+      };
+        
+    fetchProduct();
   }, [ID]);
 
-  if (loading) {
-    return <div>Cargando...</div>;
-  }
-  if (!product) {
-    return <div>Producto no encontrado</div>;
-  }
 
   const GoBack = () => {
     navigate(-1);
   };
+
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <ItemDetail 

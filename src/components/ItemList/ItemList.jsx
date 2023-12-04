@@ -5,8 +5,7 @@ import Item from './Item';
 import './Item.css'
 import Loader from '../Loader';
 
-const ItemList = ({ products, categoria, id }) => {
-
+const ItemList = ({ products}) => {
   const [showLoader, setShowLoader] = useState(true);
 
   useEffect(() => {

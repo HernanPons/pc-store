@@ -15,12 +15,6 @@ import ShoppingCartProvider from './Context/ShoppingCartContext';
 
 
 const App = () => {
-  const [showLoader, setShowLoader] = useState(true);
-
-  useEffect(() => {
-    setTimeout(() => {
-      setShowLoader(false);
-    }, 1000)});
 
 
   return (

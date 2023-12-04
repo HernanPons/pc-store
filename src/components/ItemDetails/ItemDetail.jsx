@@ -9,7 +9,7 @@ import MotherDetail from '../CatDetails/MotherDetail.jsx';
 import FuenteDetail from '../CatDetails/FuenteDetail.jsx';
 import RamDetail from '../CatDetails/RamDetail.jsx';
 
-const ItemDetail = ({ GoBack, product }) => {
+const ItemDetail = ({ GoBack, product, ID }) => {
 
 const cuotas = () => {
   const result = product.Precio / 6;

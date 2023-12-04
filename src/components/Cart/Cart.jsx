@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/ShoppingCartContext';
-
+import { Button } from '@chakra-ui/react';
+import './Cart.css'
 const Cart = () => {
   const { cart, setCart } = useContext(CartContext);
   const [cantidadTotal, setCantidadTotal] = useState(0);
@@ -66,14 +67,14 @@ const Cart = () => {
 
       <ul>
         {agregarCart.map((item, index) => (
-          <li key={index}>
-            <img src={item.Img} alt="" style={{ maxWidth: '95px' }} />
-            <p>Nombre: {item.Nombre}</p>
-            <p>Precio: ${item.Precio * item.cantidad}</p>
-            <button onClick={() => decrementarCantidad(item.Nombre)}>-</button>
-            <p>Cantidad: {item.cantidad}</p>
-            <button onClick={() => incrementarCantidad(item.Nombre)}>+</button>
-            <button onClick={() => eliminarItem(item.Nombre)}>Eliminar</button>
+          <li className='containerCart' key={index}>
+            <img className='imgCart' src={item.Img} alt="" style={{ maxWidth: '95px' }} />
+            <p className='nameCart' >Nombre: {item.Nombre}</p>
+            <p className='precioCart' >Precio: ${item.Precio * item.cantidad}</p>
+            <Button onClick={() => decrementarCantidad(item.Nombre)}>-</Button>
+            <p className='cantidadCart'>Cantidad: {item.cantidad}</p>
+            <Button onClick={() => incrementarCantidad(item.Nombre)}>+</Button>
+            <Button onClick={() => eliminarItem(item.Nombre)}>Eliminar</Button>
           </li>
         ))}
       </ul>
