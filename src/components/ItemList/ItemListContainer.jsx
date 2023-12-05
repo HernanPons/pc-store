@@ -7,7 +7,6 @@ import { getDocs, getFirestore, collection } from "firebase/firestore"
 const ItemListContainer = () => {
   const [products, setProducts] = useState([])
   const { Categoria } = useParams();
-  console.log(products)
   
 
   useEffect(() => {
@@ -19,7 +18,7 @@ const ItemListContainer = () => {
       setProducts(docs)
     })
   },[])
-console.log(products)
+
 
     /* const [products, setProducts] = useState([]);
     const { Categoria } = useParams();

@@ -1,6 +1,7 @@
 import React, { useContext, useState } from 'react';
 import { Button } from '@chakra-ui/react';
 import { CartContext } from '../../Context/ShoppingCartContext';
+import Cart from '../Cart/Cart';
 
 const useCount = (initial = 0) => {
     if (initial < 1 || initial > 9) initial = 1;
@@ -22,16 +23,18 @@ const useCount = (initial = 0) => {
     return { count, decrement, increment, reset };
 };
 
-const ItemCount = ({ product }) => {
+    const ItemCount = ({ product }) => {
     const { count, decrement, increment, reset } = useCount();
     const { cart, setCart } = useContext(CartContext);
+    
 
-    const agregarCarrito = () => {
-        setCart(prevCart => {
-            const nuevoCarrito = [...prevCart, { ...product, cantidad: count }];
-            return nuevoCarrito;
-        });
-    };
+    const agregarCarritoClick = () => {
+        const carritoEnLocalStorage = JSON.parse(localStorage.getItem('cart')) || [];
+        const nuevoCarrito = [...carritoEnLocalStorage, { ...product, cantidad: count }];
+        setCart(nuevoCarrito);
+        localStorage.setItem('cart', JSON.stringify(nuevoCarrito));
+      };
+
 
 
     return (
@@ -43,7 +46,7 @@ const ItemCount = ({ product }) => {
             </div>
             <br />
             <div>
-                <Button onClick={agregarCarrito} variant='solid' colorScheme='blue'>
+                <Button onClick={agregarCarritoClick} variant='solid' colorScheme='blue'>
                     Agregar al carrito
                 </Button>
             </div>

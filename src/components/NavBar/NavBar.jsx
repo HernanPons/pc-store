@@ -1,13 +1,25 @@
-import React from 'react'
+import React, { useEffect, useContext, useState } from 'react'
 import CartWidget from '../Cart/CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'
 import { Link } from 'react-router-dom' 
-
+import { CartContext } from '../../Context/ShoppingCartContext'
 
 const NavBar = () => {
 
   
+  const [cantidadCarrito, setCantidadCarrito] = useState(0);
+
+  useEffect(() => {
+    const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    const nuevaCantidadTotal = storedCart.reduce((total, item) => total + item.cantidad, 0);
+    
+    // Actualizar el estado
+    setCantidadCarrito(nuevaCantidadTotal);
+  }, []); // El segundo parámetro del useEffect es un array de dependencias, se deja vacío para que se ejecute solo una vez al renderizar
+
+console.log(cantidadCarrito)
 
   return (
     <div className='header'>
@@ -28,11 +40,13 @@ const NavBar = () => {
           <Spacer />
             <Input className='buscadorHeader' placeholder='Algun día seré un buscador' />
           <Spacer />
+          
           <Link to={`./components/Cart/Cart`}>
           <Box p='4' >
-            <CartWidget />
+            <CartWidget cantidadCarrito={cantidadCarrito} />
           </Box>
           </Link>
+        
         </Flex>
         <hr className='hrNav'/>
         <Flex className='navCategorias'>

@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/ShoppingCartContext';
 import { Button } from '@chakra-ui/react';
 import './Cart.css'
+
 const Cart = () => {
   const { cart, setCart } = useContext(CartContext);
   const [cantidadTotal, setCantidadTotal] = useState(0);
@@ -9,6 +10,15 @@ const Cart = () => {
   const [precioTotal, setPrecioTotal] = useState(0);
 
   useEffect(() => {
+    const storeCart = JSON.parse(localStorage.getItem('cart'))|| [];
+    setCart(storeCart);
+  }, []);
+  
+
+  useEffect(() => {
+    const updateCart = JSON.stringify(cart)
+    localStorage.setItem('cart', updateCart)
+
     const agregado = cart.reduce((acc, item) => {
     const existingItem = acc.find((i) => i.Nombre === item.Nombre);
 
