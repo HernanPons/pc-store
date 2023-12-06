@@ -26,3 +26,17 @@
   .custom-arrow.next {
     right: 10px;
   }
+
+/* ////////////////   MOBILE   //////////////// */
+
+  @media only screen and (max-width: 768px) {
+    .carruselBanner {
+      display: none !important;
+    }
+    .custom-arrow.prev {
+      display: none !important;
+    }
+    .custom-arrow.next {
+      display: none !important;
+    }
+  }

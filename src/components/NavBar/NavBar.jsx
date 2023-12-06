@@ -30,7 +30,7 @@ const NavBar = () => {
           
           <Link to={`./components/Cart/Cart`}>
           <Box p='4' >
-            <CartWidget /* cantidadCarrito={cantidadCarrito} */ />
+            <CartWidget />
           </Box>
           </Link>
         

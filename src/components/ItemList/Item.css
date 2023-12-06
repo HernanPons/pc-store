@@ -31,3 +31,22 @@ body {
 .itemBody {
     margin-bottom: 20px;
 }
+
+/* ////////////////   MOBILE   //////////////// */
+
+
+@media only screen and (max-width: 768px) {
+
+    .container {
+        margin: 20px !important;
+        gap: 20px;
+    }
+    .itemCard {
+        display: flex;
+        flex-direction: column;
+        margin: 20px !important;
+      }
+  }
+
+
+

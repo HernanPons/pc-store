@@ -1,6 +1,7 @@
 import React, { useContext, useState, useEffect } from 'react'
 import { Text } from '@chakra-ui/react'
 import { CartContext } from '../../Context/ShoppingCartContext';
+import './CartWidget.css'
 
 const CartWidget = () => {
   const [cantidadTotal, setCantidadTotal] = useState(0);
@@ -30,7 +31,7 @@ const CartWidget = () => {
     <div className="carrito-container" >
       <button>
       <Text fontSize='xl' fontWeight='bold'>{ cantidadTotal }</Text>
-        <img src="https://iili.io/JC5OLTg.png" alt="carrito de compras" style={{ minWidth: '50px' }}/>       
+        <img src="https://iili.io/JC5OLTg.png" alt="carrito de compras" className='imgCart' />       
       </button>
     </div>
   )

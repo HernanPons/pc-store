@@ -1,0 +1,14 @@
+/* ////////////////   MOBILE   //////////////// */
+
+
+@media only screen and (max-width: 768px) {
+    
+    .imgCart {
+      width: 40px !important;
+    }  
+    .carrito-container {
+        background-color: rgb(200, 200, 200);
+        border-radius: 10px;
+        margin-right: 10px !important;
+    }
+  }
