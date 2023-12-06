@@ -26,7 +26,9 @@
   .custom-arrow.next {
     right: 10px;
   }
-
+  .title-mobile {
+    display: none;
+  }
 /* ////////////////   MOBILE   //////////////// */
 
   @media only screen and (max-width: 768px) {
@@ -39,4 +41,11 @@
     .custom-arrow.next {
       display: none !important;
     }
+    .title-mobile {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      text-decoration: underline ;
   }
+}

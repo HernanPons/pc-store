@@ -58,6 +58,9 @@ const Home = () => {
     </Slider>
 
     <Categorias />
+
+    <h2 className='title-mobile'>Todos los productos</h2>
+
     <ItemListContainer />
     </div>
   );
