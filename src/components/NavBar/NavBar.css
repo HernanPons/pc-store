@@ -37,6 +37,8 @@
     
     .header {
         margin: 0 10px !important;
+        padding: 0 !important;
+        box-sizing: border-box !important;
     }
     
     .buscadorHeader {
