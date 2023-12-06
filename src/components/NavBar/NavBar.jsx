@@ -7,19 +7,6 @@ import { CartContext } from '../../Context/ShoppingCartContext'
 
 const NavBar = () => {
 
-  
-  const [cantidadCarrito, setCantidadCarrito] = useState(0);
-
-  useEffect(() => {
-    const storedCart = JSON.parse(localStorage.getItem('cart')) || [];
-
-    const nuevaCantidadTotal = storedCart.reduce((total, item) => total + item.cantidad, 0);
-    
-    // Actualizar el estado
-    setCantidadCarrito(nuevaCantidadTotal);
-  }, []); // El segundo parámetro del useEffect es un array de dependencias, se deja vacío para que se ejecute solo una vez al renderizar
-
-console.log(cantidadCarrito)
 
   return (
     <div className='header'>
@@ -43,7 +30,7 @@ console.log(cantidadCarrito)
           
           <Link to={`./components/Cart/Cart`}>
           <Box p='4' >
-            <CartWidget cantidadCarrito={cantidadCarrito} />
+            <CartWidget /* cantidadCarrito={cantidadCarrito} */ />
           </Box>
           </Link>
         
