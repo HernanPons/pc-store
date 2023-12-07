@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../../Context/ShoppingCartContext';
 import { Button } from '@chakra-ui/react';
 import './Cart.css'
+import { Link } from 'react-router-dom';
 
 const Cart = () => {
   const { cart, setCart } = useContext(CartContext);
@@ -24,9 +25,6 @@ const Cart = () => {
   
 
   useEffect(() => {
-    /* const updateCart = JSON.stringify(cart)
-    localStorage.setItem('cart', updateCart)
- */
     const agregado = cart.reduce((acc, item) => {
     const existingItem = acc.find((i) => i.Nombre === item.Nombre);
 
@@ -79,6 +77,30 @@ const Cart = () => {
     actualizarCart(updateCart);
   };
 
+
+/*            CREACION DE PEDIDO            */
+/* const [orderId, setOrderId]=useState("")
+
+const sendOrder = () => {
+    const order = {
+    buyer: { name: "agustin", phone: "1111", email: "a@a.com" },
+    items: [{ name: "bici", price: 100 }],
+    total: 100
+  };
+
+  const db = getFirestore();
+  
+  const ordersCollection = collection (db, "orders");
+  
+  addDoc(ordersCollection, order).then (({ id }) => setOrderId (id));
+  
+} */
+
+
+
+
+
+
   return (
     <div>
       <h1>SOY UN CARRITO DE COMPRAS</h1>
@@ -99,6 +121,9 @@ const Cart = () => {
 
       <p>Cantidad Total: {cantidadTotal}</p>
       <p>Precio Total: ${precioTotal}</p>
+      <Link to={`../components/Cart/Compra`}>
+        <Button >Comprar Carrito</Button>
+      </Link>
     </div>
   );
 };
