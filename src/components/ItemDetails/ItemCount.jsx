@@ -1,6 +1,8 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Button } from '@chakra-ui/react';
 import { CartContext } from '../../Context/ShoppingCartContext';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const useCount = (initial = 0) => {
   if (initial < 1 || initial > 9) initial = 1;
@@ -36,6 +38,18 @@ const ItemCount = ({ product }) => {
     const nuevoCarrito = [...carritoEnLocalStorage, { ...product, cantidad: count }];
     setCart(nuevoCarrito);
     localStorage.setItem('cart', JSON.stringify(nuevoCarrito));
+
+    toast(`Se ${count === 1 ? 'agregó' : 'agregaron'} ${count} ${count === 1 ? 'producto' : 'productos'} al carrito`, {
+      position: "top-center",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+
   };
 
 

@@ -13,6 +13,7 @@ import PagTrabajando from './components/PagTrabajando.jsx'
 import { CartContext } from './Context/ShoppingCartContext';
 import ShoppingCartProvider from './Context/ShoppingCartContext';
 import Compra from './components/Cart/Compra.jsx'
+import { ToastContainer } from 'react-toastify';
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
             </Routes>
             
             <Footer />
+            <ToastContainer />
         </BrowserRouter>
       </ShoppingCartProvider>
     </>

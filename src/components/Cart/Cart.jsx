@@ -78,28 +78,6 @@ const Cart = () => {
   };
 
 
-/*            CREACION DE PEDIDO            */
-/* const [orderId, setOrderId]=useState("")
-
-const sendOrder = () => {
-    const order = {
-    buyer: { name: "agustin", phone: "1111", email: "a@a.com" },
-    items: [{ name: "bici", price: 100 }],
-    total: 100
-  };
-
-  const db = getFirestore();
-  
-  const ordersCollection = collection (db, "orders");
-  
-  addDoc(ordersCollection, order).then (({ id }) => setOrderId (id));
-  
-} */
-
-
-
-
-
 
   return (
     <div>
