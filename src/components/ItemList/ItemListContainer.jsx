@@ -19,36 +19,36 @@ const ItemListContainer = () => {
     })
   },[])
 
-
-    /* const [products, setProducts] = useState([]);
-    const { Categoria } = useParams();
-    
-    useEffect(() => {
-      const fetchData = async () => {
-        try {
-          const response = await fetch('../Productos.json');
-          const productosData = await response.json();
-          setProducts(productosData.Componentes);
-        } catch (error) {
-          console.log('Error al obtener los archivos:', error);
-        }
-      };
-  
-      fetchData();
-    }, []); */
-    
     const filteredProducts = Categoria
       ? products.filter((product) => product.Categoria === Categoria)
       : products;
   
-    /* const {ID} = useParams () */
+      let categoryTitle = 'Todos los productos';
+
+      switch (Categoria) {
+        case 'RAM':
+          categoryTitle = 'Memorias RAM';
+          break;
+        case 'Mother':
+          categoryTitle = 'Placas Base';
+          break;
+        case 'Fuente':
+          categoryTitle = 'Fuentes';
+          break;
+        case 'Procesador':
+          categoryTitle = 'Procesadores';
+          break;
+
+    
+        default:
+          break;
+      }
 
   return (
-    <div className='itemBody'>      
+    <div className='itemBody'> 
+      <h1>{categoryTitle}</h1>     
       <ItemList
       products={filteredProducts}
-      /* categoria={Categoria}
-      id={ID} */
        />     
     </div>    
   );

@@ -13,8 +13,6 @@ const Cart = () => {
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem('cart'));
   
-    console.log('Valor almacenado en localStorage:', storedCart);
-  
     if (storedCart !== null) {
       setCart(storedCart);
     } else {
@@ -80,8 +78,7 @@ const Cart = () => {
 
 
   return (
-    <div>
-      <h1>SOY UN CARRITO DE COMPRAS</h1>
+    <div className='cartContainer'>
 
       <ul>
         {agregarCart.map((item, index) => (
@@ -97,11 +94,12 @@ const Cart = () => {
         ))}
       </ul>
 
-      <p>Cantidad Total: {cantidadTotal}</p>
-      <p>Precio Total: ${precioTotal}</p>
-      <Link to={`../components/Cart/Compra`}>
-        <Button >Comprar Carrito</Button>
-      </Link>
+      <p className='cartTotals'>Cantidad Total: {cantidadTotal}</p>
+      <p className='cartTotals'>Precio Total: ${precioTotal}</p>
+      <p className='cartTotals'><Link to={`../components/Cart/Compra`}>
+        <Button className='cartButton'>Comprar Carrito</Button>
+      </Link></p>
+
     </div>
   );
 };

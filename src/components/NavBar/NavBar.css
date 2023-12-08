@@ -3,8 +3,11 @@
     background-color: white;
 }
 
+.logo {
+    min-width: 130px;
+}
 .pcStore {
-    width: 150px;
+    width: 120px;
     margin-left: 20px;
 }
 

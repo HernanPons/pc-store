@@ -36,7 +36,7 @@ const Categorias = () => {
         <Link to={`./productos/Fuente`}>
         <Card className='cardCat'>
           <CardHeader>
-            <Heading size='md'> Fuentes de Alimentacion</Heading>
+            <Heading size='md'> Energia</Heading>
           </CardHeader>
           <CardBody>
             <img src="https://i.imgur.com/LcGNFrk.jpg" alt="Fuentes de Alimentacion" />

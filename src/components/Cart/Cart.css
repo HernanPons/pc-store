@@ -25,26 +25,28 @@
 .containerCompra {
   margin: 50px;
   display: grid;
-  grid-template-columns: 2fr 2fr 1fr ;
+  grid-template-columns: 2fr 2fr ;
   gap: 30px;
 }
 .formContainer {
   display: grid;
   margin-bottom: 10px;
   gap: 10px;
-  
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  justify-content: center;
+  padding: 30px;
 }
 
 input {
-  width: 50%;
-  margin-bottom: 5px;
   padding: 1px;
   padding-left: 5px;
-  margin-left: 5px;
+  margin-bottom: 5px;
 }
 
 .containerProducts {
   margin-bottom: 30px;
+  background-color: rgb(200, 200, 200);
 }
 
 .totalAndButton {
@@ -56,3 +58,63 @@ input {
   gap: 20px;
 }
         
+
+/* Estilos para el contenedor del carrito */
+.cartContainer {
+  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
+  margin: 0 auto; /* Centra el contenedor en la página */
+  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Estilos para cada ítem del carrito */
+.containerCart {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+/* Estilos para la imagen del producto en el carrito */
+.imgCart {
+  max-width: 80px; /* Ajusta el ancho máximo según tus necesidades */
+  margin-right: 10px;
+}
+
+/* Estilos para el texto del producto en el carrito */
+.nameCart {
+  font-weight: bold;
+}
+
+/* Estilos para el precio del producto en el carrito */
+.precioCart {
+  margin-bottom: 5px;
+  margin-left: auto;
+}
+
+/* Estilos para los botones de cantidad y eliminar */
+.containerCart button {
+  margin: 0 5px;
+}
+
+/* Estilos para la cantidad total y el precio total */
+.cartTotals {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+/* Estilos para el botón de comprar carrito */
+.cartButton {
+  margin-top: 10px;
+  margin-left: auto;
+
+}
+
+/* Estilos para los botones en general */
+button {
+  padding: 5px 10px;
+  cursor: pointer;
+}

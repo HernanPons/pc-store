@@ -30,6 +30,12 @@ body {
 }
 .itemBody {
     margin-bottom: 20px;
+    text-align: center;
+}
+.itemBody h1 {
+    margin: 20px;
+    margin-bottom: 40px;
+    text-decoration: underline;
 }
 
 /* ////////////////   MOBILE   //////////////// */

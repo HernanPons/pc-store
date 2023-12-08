@@ -105,7 +105,7 @@ const NavBar = () => {
                 alt='Simon the pensive'
                 mr='12px'
               />
-              <p>Fuente de Alimentación</p>
+              <p>Fuente de Energia</p>
             </MenuItem>
             </Link>
 

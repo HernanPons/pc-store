@@ -15,6 +15,14 @@ const Compra = () => {
     const [email, setEmail] = useState ("")
 
     const sendOrder = () => {
+        if (!nombre || !numero || !email) {
+            Swal.fire({
+                title: "Error",
+                text: "Completa todos los campos antes de confirmar la compra",
+                icon: "error",
+            });
+            return;
+        }
         const order = {
             Comprador: { nombre: {nombre}, telefono: {numero}, email: {email} },
             Productos: cart.map(item => ({ nombre: item.Nombre, precio: item.Precio, ID: item.ID, cantidad: item.cantidad })),
@@ -45,10 +53,10 @@ const Compra = () => {
 
   return (
     <div className='containerCompra'>
-        <div>
+        <div className='itemCompra'>
         {cart.map((item, index) => (
             <div key={index} className='containerProducts'>
-                <p className='nameCart' >Nombre: {item.Nombre}</p>
+                <p className='nameCart' >Componente: {item.Nombre}</p>
                 <p className='precioCart' >Precio: ${item.Precio * item.cantidad}</p>   
                 <p className='cantidadCart'>Cantidad: {item.cantidad}</p>
             </div>
@@ -58,37 +66,38 @@ const Compra = () => {
                 <div>
                     <label htmlFor="nombre" className="formLabel">Nombre:</label>
                     <input
+                        required
                         type="text"
                         id="nombre"
                         placeholder="Nombre"
                         onChange={(e) => setNombre(e.target.value)}
                     />
                 </div>
-
                 <div>
                     <label htmlFor="numero" className="formLabel">Número de teléfono:</label>
                     <input
+                        required
                         type="number"
                         id="numero"
                         placeholder="Número de teléfono"
                         onChange={(e) => setNumero(e.target.value)}
                     />
                 </div>
-
                 <div>
                     <label htmlFor="email" className="formLabel">Email:</label>
                     <input
+                        required
                         type="email"
                         id="email"
                         placeholder="Email"
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
-            </form>
-        <div className='totalAndButton'>    
-        <p> Total de la compra: ${ total } </p>
-        <Button onClick={() => sendOrder()}>Confirmar Compra</Button>
-        </div>
+                <div className='totalAndButton'>    
+                    <p> Total de la compra: ${ total } </p>       
+                    <Button onClick={() => sendOrder()}>Confirmar Compra</Button>       
+                </div>
+        </form>
 
         
     </div>
