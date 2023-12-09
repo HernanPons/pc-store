@@ -3,16 +3,17 @@ import { CartContext } from '../../Context/ShoppingCartContext';
 import { Button } from '@chakra-ui/react';
 import './Cart.css'
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2'
 
 const Cart = () => {
   const { cart, setCart } = useContext(CartContext);
   const [cantidadTotal, setCantidadTotal] = useState(2);
   const [agregarCart, setAgregarCart] = useState([]);
   const [precioTotal, setPrecioTotal] = useState(0);
+  
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem('cart'));
-  
     if (storedCart !== null) {
       setCart(storedCart);
     } else {
@@ -73,13 +74,22 @@ const Cart = () => {
   const eliminarItem = (nombre) => {
     const updateCart = cart.filter((item) => item.Nombre !== nombre);
     actualizarCart(updateCart);
+    Swal.fire({
+      text: "Se eliminó un producto del carrito",
+      icon: "success",
+      confirmButtonText: "Aceptar",
+    });
   };
 
 
 
   return (
     <div className='cartContainer'>
-
+      
+      {cart.length === 0 ? (
+        <p className='emptyCartMessage'>El carrito está vacío. Agrega productos para continuar.</p>
+      ) : (
+      <>
       <ul>
         {agregarCart.map((item, index) => (
           <li className='containerCart' key={index}>
@@ -99,7 +109,8 @@ const Cart = () => {
       <p className='cartTotals'><Link to={`../components/Cart/Compra`}>
         <Button className='cartButton'>Comprar Carrito</Button>
       </Link></p>
-
+      </>
+      )}
     </div>
   );
 };

@@ -58,17 +58,14 @@ input {
   gap: 20px;
 }
         
-
-/* Estilos para el contenedor del carrito */
 .cartContainer {
-  max-width: 100%; /* Ajusta el ancho máximo según tus necesidades */
-  margin: 0 auto; /* Centra el contenedor en la página */
-  padding: 20px; /* Agrega un poco de espacio alrededor del contenido */
+  max-width: 100%; 
+  margin: 0 auto;
+  padding: 20px; 
   display: flex;
   flex-direction: column;
 }
 
-/* Estilos para cada ítem del carrito */
 .containerCart {
   border: 1px solid #ccc;
   padding: 10px;
@@ -77,43 +74,36 @@ input {
   align-items: center;
 }
 
-/* Estilos para la imagen del producto en el carrito */
 .imgCart {
-  max-width: 80px; /* Ajusta el ancho máximo según tus necesidades */
+  max-width: 80px;
   margin-right: 10px;
 }
 
-/* Estilos para el texto del producto en el carrito */
 .nameCart {
   font-weight: bold;
 }
 
-/* Estilos para el precio del producto en el carrito */
 .precioCart {
   margin-bottom: 5px;
   margin-left: auto;
 }
 
-/* Estilos para los botones de cantidad y eliminar */
 .containerCart button {
   margin: 0 5px;
 }
 
-/* Estilos para la cantidad total y el precio total */
 .cartTotals {
   margin-top: 20px;
   margin-left: auto;
   margin-right: 50px;
 }
 
-/* Estilos para el botón de comprar carrito */
 .cartButton {
   margin-top: 10px;
   margin-left: auto;
 
 }
 
-/* Estilos para los botones en general */
 button {
   padding: 5px 10px;
   cursor: pointer;

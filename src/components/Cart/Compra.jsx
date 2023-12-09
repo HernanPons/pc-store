@@ -8,7 +8,7 @@ import './Cart.css'
 
 const Compra = () => {
     const [orderId, setOrderId] = useState("")
-    const { cart } = useContext(CartContext);
+    const { cart, setCart } = useContext(CartContext);
     const total = cart.reduce((total, item) => total + item.Precio * item.cantidad, 0)
     const [nombre, setNombre] = useState ("")
     const [numero, setNumero] = useState ("")
@@ -39,12 +39,13 @@ const Compra = () => {
 
         addDocPromise().then((id) => {
             setOrderId(id);
-
+            
             Swal.fire({
                 title: "Compra confirmada",
                 text: `Código de compra: ${id}`,
                 icon: "success",
             });
+            setCart([])
         });
         
 }
