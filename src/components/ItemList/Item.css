@@ -42,15 +42,18 @@ body {
 
 
 @media only screen and (max-width: 768px) {
-
+    .itemBody h1 {
+        margin-bottom: 40px;
+        text-decoration: underline;
+        margin: 20px 0;
+    }
     .container {
-        margin: 20px !important;
+        margin: 0px !important;
         gap: 20px;
     }
     .itemCard {
         display: flex;
         flex-direction: column;
-        margin: 20px !important;
       }
   }
 

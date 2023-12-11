@@ -93,7 +93,7 @@ const Cart = () => {
       <ul>
         {agregarCart.map((item, index) => (
           <li className='containerCart' key={index}>
-            <img className='imgCart' src={item.Img} alt=""/>
+            <img className='imgCartCard' src={item.Img} alt=""/>
             <p className='nameCart' >Nombre: {item.Nombre}</p>
             <p className='precioCart' >Precio: ${item.Precio * item.cantidad}</p>
             <Button onClick={() => decrementarCantidad(item.Nombre)}>-</Button>

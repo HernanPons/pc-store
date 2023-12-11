@@ -54,3 +54,56 @@ h1 {
 h2 {
     font-size: 42px;
 }
+
+
+
+/* /////////////////// MOBILE /////////////// */
+
+
+@media only screen and (max-width: 768px) {
+    .containerItem,
+    .buttonVolver {
+        margin: 0 !important;
+    }
+    .containerItem {
+      flex-direction: column;
+      margin: 10px;
+    }
+  
+    .containerText {
+      max-width: 100%;
+      margin-top: 20px;
+      padding: 20px;
+      
+    }
+  
+    .containerImg {
+      max-width: 90%;
+      height: auto; 
+      margin: auto;
+    }
+  
+    .buttonVolver {
+      margin: 0 10px; 
+      margin-bottom: 20px;
+    }
+  
+    .containerPay {
+      max-width: 100%;
+      padding: 20px;
+      
+    }
+  
+    .payItems {
+      margin-top: 10px;
+    }
+  
+    h1 {
+      font-size: 24px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+  }

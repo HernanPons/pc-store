@@ -33,12 +33,12 @@ const Compra = () => {
         const ordersCollection = collection (db, "orders"); 
         
         const addDocPromise = async () => {
-            const docRef = await addDoc(ordersCollection, order);
+        const docRef = await addDoc(ordersCollection, order);
             return docRef.id;
         };
 
         addDocPromise().then((id) => {
-            setOrderId(id);
+        setOrderId(id);
             
             Swal.fire({
                 title: "Compra confirmada",

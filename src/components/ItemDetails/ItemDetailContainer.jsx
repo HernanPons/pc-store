@@ -13,26 +13,26 @@ const ItemDetailContainer = () => {
 
   useEffect(() => {
     const fetchProduct = async () => {
-        const db = getFirestore();
-        const itemsCollection = collection(db, "Componentes");
-        const q = query(itemsCollection, where("ID", "==", ID));
+    const db = getFirestore();
+    const itemsCollection = collection(db, "Componentes");
+    const q = query(itemsCollection, where("ID", "==", ID));
         
-        try {
-          const oneItem = await getDocs(q);
+      try {
+        const oneItem = await getDocs(q);
   
-          if (oneItem.size > 0) {
-            const docData = oneItem.docs[0].data();
-            setProduct(docData);
-          } else {
-            console.log("Producto no encontrado");
-          }
-        } catch (error) {
-          console.error("Error al obtener el documento:", error);
-        } finally {
-          setLoading(false);
-  
+        if (oneItem.size > 0) {
+          const docData = oneItem.docs[0].data();
+          setProduct(docData);
+        } else {
+          console.log("Producto no encontrado");
         }
-      };
+      } catch (error) {
+        console.error("Error al obtener el documento:", error);
+      } finally {
+        setLoading(false);
+  
+      }
+    };
         
     fetchProduct();
   }, [ID]);

@@ -16,10 +16,7 @@ const cuotas = () => {
   return result.toFixed(2);
 };
 
-
   return (
-
-
   <div className='containerBody'>  
     <Button className='buttonVolver' onClick={GoBack}>
       Volver
@@ -46,7 +43,6 @@ const cuotas = () => {
         {product.Categoria === 'RAM' && <RamDetail product={product} />}
 
       </div>
-      
       <div className='containerPay'>  
         <div className='payItemsTop'>
           <span>Mismo precio en 6 cuotas de ${cuotas ()}</span>

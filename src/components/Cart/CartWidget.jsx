@@ -21,7 +21,6 @@ const CartWidget = () => {
       setCantidadTotal(0);
     }
 
-    // Guardar en localStorage
     localStorage.setItem('cart', JSON.stringify(cart));
   }, [cart, setCart]);
 
