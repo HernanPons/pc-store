@@ -34,6 +34,7 @@
   @media only screen and (max-width: 768px) {
     .categorias-container {
       margin: 0 !important;
+      padding: 10px;
     }
     .carruselBanner {
       display: none !important;

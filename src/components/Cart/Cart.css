@@ -137,6 +137,8 @@ button {
   .containerCompra {
     grid-template-columns: 1fr;
     gap: 15px;
+    margin: 0px !important;
+    padding: 10px;
   }
 
   .formContainer {

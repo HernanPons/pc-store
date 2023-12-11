@@ -64,6 +64,7 @@ h2 {
     .containerItem,
     .buttonVolver {
         margin: 0 !important;
+        padding: 10px;
     }
     .containerItem {
       flex-direction: column;

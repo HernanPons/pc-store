@@ -42,6 +42,9 @@ body {
 
 
 @media only screen and (max-width: 768px) {
+    .itemBody {
+        padding: 10px;
+    }
     .itemBody h1 {
         margin-bottom: 40px;
         text-decoration: underline;
