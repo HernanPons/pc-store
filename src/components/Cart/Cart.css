@@ -5,8 +5,8 @@
     gap: 15px;
   }
   
-  .imgCart {
-    max-width: 120px;
+  .imgCartCard {
+    width: 120px;
     margin-right: 20px;
   }
 .nameCart
@@ -156,6 +156,9 @@ button {
 
   button {
     width: 100%;
+  }
+  .imgCartCard {
+    width: auto;
   }
 
 
