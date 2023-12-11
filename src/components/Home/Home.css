@@ -32,6 +32,9 @@
 /* ////////////////   MOBILE   //////////////// */
 
   @media only screen and (max-width: 768px) {
+    .categorias-container {
+      margin: 0 !important;
+    }
     .carruselBanner {
       display: none !important;
     }
