@@ -1,26 +1,21 @@
 import React, { useContext, useState, useEffect } from 'react';
 import { Button } from '@chakra-ui/react';
 import { CartContext } from '../../Context/ShoppingCartContext';
-import { ToastContainer, toast } from 'react-toastify';
+import {  toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const useCount = (initial = 0) => {
   if (initial < 1 || initial > 9) initial = 1;
-
   const [count, setCount] = useState(initial);
-
   const decrement = () => {
     if (count > 1) setCount(prev => prev - 1);
   };
-
   const increment = () => {
     if (count < 9) setCount(prev => prev + 1);
   };
-
   const reset = () => {
     setCount(initial);
   };
-
   return { count, decrement, increment, reset };
 };
 

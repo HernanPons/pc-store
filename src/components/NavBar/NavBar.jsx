@@ -1,4 +1,4 @@
-import React, { useEffect, useContext, useState } from 'react'
+import React from 'react'
 import CartWidget from '../Cart/CartWidget'
 import { Menu, MenuButton, MenuItem, MenuList, Image, Flex, Box, Spacer, Center, Square, Text, Input, Divider } from '@chakra-ui/react'
 import './NavBar.css'

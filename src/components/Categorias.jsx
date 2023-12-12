@@ -1,5 +1,5 @@
 import React from 'react';
-import { SimpleGrid, Box, Card, CardHeader, Heading, CardBody, Text, Button, CardFooter } from '@chakra-ui/react';
+import { SimpleGrid, Box, Card, CardHeader, Heading, CardBody, Button, CardFooter } from '@chakra-ui/react';
 import './Categorias.css';
 import { Link } from 'react-router-dom' 
 

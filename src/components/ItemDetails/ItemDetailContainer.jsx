@@ -30,18 +30,14 @@ const ItemDetailContainer = () => {
         console.error("Error al obtener el documento:", error);
       } finally {
         setLoading(false);
-  
       }
     };
-        
     fetchProduct();
   }, [ID]);
-
 
   const GoBack = () => {
     navigate(-1);
   };
-
   if (loading) {
     return <Loader />;
   }

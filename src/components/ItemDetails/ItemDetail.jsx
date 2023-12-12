@@ -1,8 +1,6 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { Button, Image} from '@chakra-ui/react'
-/* import '../App.css' */
 import ItemCount from './ItemCount.jsx'
-import { useParams, Link } from 'react-router-dom'
 import './ItemDetail.css'
 import ProceadorDetail from '../CatDetails/ProceadorDetail.jsx';
 import MotherDetail from '../CatDetails/MotherDetail.jsx';
@@ -53,7 +51,6 @@ const cuotas = () => {
           <ItemCount
             product={product}
           />
-          
         </div>
       </div>
     </div>

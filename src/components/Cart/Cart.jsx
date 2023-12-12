@@ -20,8 +20,6 @@ const Cart = () => {
       console.log('No se encontró un valor en localStorage para la clave "cart".');
     }
   }, [setCart]);
-  
-  
 
   useEffect(() => {
     const agregado = cart.reduce((acc, item) => {
@@ -106,7 +104,7 @@ const Cart = () => {
 
       <p className='cartTotals'>Cantidad Total: {cantidadTotal}</p>
       <p className='cartTotals'>Precio Total: ${precioTotal}</p>
-      <p className='cartTotals'><Link to={`../components/Cart/Compra`}>
+      <p className='cartTotals'><Link to={`../components/Cart/Checkout`}>
         <Button className='cartButton'>Comprar Carrito</Button>
       </Link></p>
       </>

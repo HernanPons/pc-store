@@ -6,19 +6,28 @@ import Swal from 'sweetalert2'
 import './Cart.css'
 
 
-const Compra = () => {
+const Checkout = () => {
     const [orderId, setOrderId] = useState("")
     const { cart, setCart } = useContext(CartContext);
     const total = cart.reduce((total, item) => total + item.Precio * item.cantidad, 0)
     const [nombre, setNombre] = useState ("")
     const [numero, setNumero] = useState ("")
     const [email, setEmail] = useState ("")
+    const [email2, setEmail2] =useState ("")
 
     const sendOrder = () => {
         if (!nombre || !numero || !email) {
             Swal.fire({
                 title: "Error",
                 text: "Completa todos los campos antes de confirmar la compra",
+                icon: "error",
+            });
+            return;
+        }
+        if (email !== email2) {
+            Swal.fire({
+                title: "Error",
+                text: "Los correos electrónicos no coinciden",
                 icon: "error",
             });
             return;
@@ -94,6 +103,16 @@ const Compra = () => {
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
+                <div>
+                    <label htmlFor="email" className="formLabel">Confirmar Email:</label>
+                    <input
+                        required
+                        type="email"
+                        id="email2"
+                        placeholder="Confirmar Email"
+                        onChange={(e) => setEmail2(e.target.value)}
+                    />
+                </div>
                 <div className='totalAndButton'>    
                     <p> Total de la compra: ${ total } </p>       
                     <Button onClick={() => sendOrder()}>Confirmar Compra</Button>       
@@ -105,4 +124,4 @@ const Compra = () => {
   )
 }
 
-export default Compra
+export default Checkout

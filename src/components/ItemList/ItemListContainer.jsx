@@ -38,8 +38,6 @@ const ItemListContainer = () => {
         case 'Procesador':
           categoryTitle = 'Procesadores';
           break;
-
-    
         default:
           break;
       }

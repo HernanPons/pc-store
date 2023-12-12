@@ -1,9 +1,7 @@
 import { createContext, useState, useEffect } from "react";
-
 export const CartContext = createContext();
 
 const ShoppingCartProvider = (props) => {
-  // Mover el estado de cart a la parte superior y cargarlo desde localStorage
   const [cart, setCart] = useState(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart"));
     console.log("Stored cart from localStorage:", storedCart);
